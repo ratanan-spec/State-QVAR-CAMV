@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite the published article and identify this software as conditional replication package v1.0."
+title: "State-QVAR CAMV: Official Replication Package (Conditional v1.0)"
+authors:
+  - family-names: Bunnag
+    given-names: Tanattrin
+version: "1.0-conditional"
+date-released: 2026-10-21
+references:
+  - type: article
+    title: "Tail-Dependent Connectedness Across Carbon, Water, Clean-Energy, Green-Bond, and ESG Markets"
+    authors:
+      - family-names: Bunnag
+        given-names: Tanattrin
+    doi: 10.3390/su182010634
+    year: 2026

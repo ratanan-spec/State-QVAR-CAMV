@@ -1,0 +1,1 @@
+Original market data and row-level derived data are intentionally excluded pending confirmation of redistribution rights. Obtain properly licensed observations and create data/sustainability_markets.xlsx with sheet Sheet1 and the seven date/value pairs described in README.md. Do not fabricate or substitute values if attempting exact replication.

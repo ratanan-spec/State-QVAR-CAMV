@@ -1,0 +1,8 @@
+Python 3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]
+numpy==2.3.5
+pandas==2.2.3
+scipy==1.17.0
+scikit-learn==1.8.0
+statsmodels==0.14.6
+openpyxl==3.1.5
+matplotlib==3.10.8
