@@ -1,6 +1,26 @@
 > **CONDITIONAL RELEASE NOTICE:** Read [RELEASE_STATUS.md](RELEASE_STATUS.md) before use. Market data are intentionally omitted. Full independent reproduction is pending. Source code is released under the MIT License; see LICENSE.
 
-# Reproducibility package: sustainable-market quantile connectedness
+# State-QVAR CAMV — Official Conditional Replication Package v1.0
+
+**Tanattrin Bunnag · Sustainability (2026), 18(20), 10634 · [Published article](https://doi.org/10.3390/su182010634)**
+
+A publication-linked, open-source reference implementation of **State-Contingent Quantile VAR Connectedness-Adjusted Minimum-Variance Portfolio Optimization (State-QVAR CAMV)**. The repository covers quantile-based spillover networks and a state-contingent out-of-sample portfolio backtest. **MIT-licensed source code; conditional reproduction status; original market data not redistributed.**
+
+## Visual previews (illustrative, based on bundled stored results)
+
+The following *supplemental visual summaries* use values from the archived results; they are **not** independently regenerated manuscript figures or a substitute for the paper's published Figures 5–6.
+
+**Quantile network highlights (Figure 5-style summary):**
+
+![Figure 5-style summary of four strongest quantile FEVD links](assets/quantile_network_highlights.svg)
+
+**Portfolio risk comparison (Figure 6-style summary):**
+
+![Figure 6-style summary of stored portfolio risk metrics](assets/portfolio_risk_comparison.svg)
+
+See [RELEASE_STATUS.md](RELEASE_STATUS.md), [TEST_REPORT.md](TEST_REPORT.md), and [MANUSCRIPT_OUTPUT_MAP.md](MANUSCRIPT_OUTPUT_MAP.md) for limitations, validation status, and source-output mapping.
+
+## Reproducibility package: sustainable-market quantile connectedness
 
 This package reproduces the empirical workflow used in **Tail-Dependent
 Connectedness across Carbon, Water, Clean-Energy, Green-Bond, and ESG Markets**.
@@ -30,6 +50,8 @@ Python 3.11 or newer is recommended.
 python -m pip install -r requirements.txt
 python reproduce_all.py
 ```
+
+**Important:** The command requires a lawfully obtained `data/sustainability_markets.xlsx` workbook that is **not** bundled in this public repository. Without it, end-to-end reproduction cannot run.
 
 This one command runs the connectedness analysis, the strict out-of-sample
 portfolio exercise, and the manuscript-result consistency checks. The complete

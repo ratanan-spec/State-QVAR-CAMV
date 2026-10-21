@@ -25,3 +25,6 @@ This is an author-attributed, publication-linked research code package prepared 
 - Pin tested dependency versions and record Python/OS environment.
 - Run `python reproduce_all.py` in a clean environment with legally sourced data; compare all tables, figures, and manuscript results; record hashes and logs.
 - Create a versioned release and archival DOI only after author approval.
+## Public visual summaries
+
+`assets/quantile_network_highlights.svg` and `assets/portfolio_risk_comparison.svg` are author-produced **illustrative summaries** assembled from stored numeric outputs. They are *not* copies of the journal's typeset figures, and they do not verify full independent reproduction. The published manuscript is the authoritative reference for Figure 5 and Figure 6.
