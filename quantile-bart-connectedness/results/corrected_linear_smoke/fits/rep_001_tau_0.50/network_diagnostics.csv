@@ -1,0 +1,2 @@
+tau,tci_quantile_local_gfevd_mean_pct,tci_q025_pct,tci_q975_pct,tci_rhat,tci_bulk_ess,edge_rhat_p95,edge_rhat_max,edge_bulk_ess_min,edge_bulk_ess_median,median_raw_radius,median_stability_shrink,states,step_sd,horizon,interpretation
+0.5,29.812743800550404,29.161957305712683,30.562630365980596,1.0100167644927533,990.2680939754815,1.0122239112492244,1.0147759102092362,391.18372274274685,881.2917614688205,0.38679763674736023,1.0,20,0.5,10,"exploratory quantile-local GFEVD under frozen-state linearization and fixed residual covariance; predictive, not causal"

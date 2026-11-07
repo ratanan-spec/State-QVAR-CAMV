@@ -1,0 +1,47 @@
+[
+  {
+    "test": "ALD check-loss equivalence",
+    "tau": 0.01,
+    "max_error": 0.0,
+    "passed": true
+  },
+  {
+    "test": "ALD check-loss equivalence",
+    "tau": 0.05,
+    "max_error": 2.220446049250313e-16,
+    "passed": true
+  },
+  {
+    "test": "ALD check-loss equivalence",
+    "tau": 0.5,
+    "max_error": 0.0,
+    "passed": true
+  },
+  {
+    "test": "ALD check-loss equivalence",
+    "tau": 0.95,
+    "max_error": 0.0,
+    "passed": true
+  },
+  {
+    "test": "ALD check-loss equivalence",
+    "tau": 0.99,
+    "max_error": 0.0,
+    "passed": true
+  },
+  {
+    "test": "one-step target and operator identities",
+    "dgp": "linear",
+    "passed": true
+  },
+  {
+    "test": "one-step target and operator identities",
+    "dgp": "nonlinear",
+    "passed": true
+  },
+  {
+    "test": "one-step target and operator identities",
+    "dgp": "nonlinear_heavytail",
+    "passed": true
+  }
+]

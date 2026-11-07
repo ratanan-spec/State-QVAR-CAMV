@@ -1,0 +1,15 @@
+from pathlib import Path
+root=Path(__file__).parent
+p=root/'fit_qbart_connectedness_strict.py';s=p.read_text()
+s=s.replace('xcols = [f"{a}_ret_lag1" for a in ASSETS]','xcols = [f"{a}_ret" for a in ASSETS]')
+s=s.replace('b=ald_scale, q=args.tau','b=np.sqrt(args.tau * (1 - args.tau)) / ald_scale, q=args.tau')
+s=s.replace('progressbar=True','progressbar=False')
+s=s.replace('    # Estimate fixed quantile-residual covariance from training data only.','    # Archive raw operators for downstream checks without refitting or scrambling draws.\n    np.savez_compressed(out / "operator_draws.npz", derivatives=chain_derivs, residuals=residual_matrix, state_ids=state_ids, training_x=X, sensitivity_h=np.asarray(sensitivity_h))\n\n    # Estimate fixed quantile-residual covariance from training data only.')
+s=s.replace('"fixed per equation at the training-sample linear-QR mean check loss"','"check-loss scale sigma; PyMC b = sqrt(tau*(1-tau))/sigma"')
+s=s.replace('    out = Path(args.out)','    if not 0 < args.tau < 1:\n        raise ValueError("tau must lie strictly between zero and one")\n    out = Path(args.out)')
+p.write_text(s)
+p=root/'run_qbart_dgp_monte_carlo.py';s=p.read_text();s=s.replace('XCOLS = [f"{a}_ret_lag1" for a in ASSETS]','XCOLS = [f"{a}_ret" for a in ASSETS]')
+s=s.replace('    # r[t+2] depends on r[t], matching this estimator\'s feature/target columns:\n    # row t+1 contains lag1=r[t] and lead1=r[t+2].','    # One-step recursion: row t contains current r[t] and next target r[t+1].')
+s=s.replace('r[:2] = rng.normal(0, .15, size=(2, 5))','r[0] = rng.normal(0, .15, size=5)')
+s=s.replace('for t in range(n-1):','for t in range(n):').replace('r[t+2] = location(r[t:t+1], dgp)[0]','r[t+1] = location(r[t:t+1], dgp)[0]')
+p.write_text(s)

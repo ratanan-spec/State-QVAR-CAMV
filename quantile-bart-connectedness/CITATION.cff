@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: Please cite this software and the exact Git commit used.
+title: Quantile BART Connectedness Experimental Implementation
+version: 0.2.0-experimental
+date-released: 2026-11-07
+authors:
+  - family-names: Bunnag
+    given-names: Tanattrin
+license: MIT

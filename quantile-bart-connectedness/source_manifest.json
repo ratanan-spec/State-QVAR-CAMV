@@ -1,0 +1,11 @@
+{
+  "code/check_tail_sampler.py": "8cfb86c2d3ca12ac8d0e1fa7c57d8b641823920a2909f5599fb614bba035b165",
+  "code/download_panel.py": "ff944fe6f9f5cd88c70d36b6949261af4a87e7da38763e3422b3e543d214a093",
+  "code/patch_v02.py": "d24f3b2746d8c9e8c600b64914a9f52fb44d2a98ce99f20613d4c6588abe9cbc",
+  "code/run_qbart_dgp_monte_carlo.py": "9bb31012eaafbc7488b6bc9da72ed4adb40891e3b82419ca388ea80c5d59d484",
+  "code/fit_qbart_connectedness_strict.py": "166e31586dc7aa19642d0086101484673dd7e705286d42a1fc2778b632fe7fd0",
+  "code/fit_qbart_quantile_forecasts.py": "39030fd057c7961894b3cf0b1b42ee81661077a8997ecd8782da8c049a9683dd",
+  "code/run_recovery_validation.py": "2c1592a7d0ff8fa1d02ac601272c5b3f98153af840837b09840d219aaacd89b1",
+  "tests/test_parameterization.py": "623af4fd51fa57834e96634f48dbd194541d0008ec33ff46136d9bc9cf45eb78",
+  "legacy/fit_qbart_connectedness_strict_PREAUDIT.py": "c78f7b89fe6c4cdf69da7e38965ecde62d82de17becd3e074c9a70720fce1683"
+}
